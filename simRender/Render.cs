@@ -15,7 +15,7 @@ namespace simRender
             this.walkers = walkers;
         }
 
-        public void Start()
+        public RenderResult Start()
         {
             result = new RenderResult(this);
 
@@ -28,8 +28,8 @@ namespace simRender
                 result.PushData(f, walkers);
                 Console.WriteLine("Rendering {0} / {1}", f+1, length);
             }
-            Console.WriteLine("Done!");
-            result.Export();
+
+            return result;
         }
     }
 }

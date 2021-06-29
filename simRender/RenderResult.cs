@@ -27,9 +27,9 @@ namespace simRender
 
         public void Export()
         {
-            string json = JsonSerializer.Serialize(data);
+            string json = RenderSerializer.Serialize(data);
 
-            string fileName = "export.json";
+            string fileName = "export.sim";
             File.WriteAllText(fileName, json);
         }
     }

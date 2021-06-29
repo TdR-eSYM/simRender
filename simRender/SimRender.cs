@@ -18,7 +18,9 @@ namespace simRender
 
             Console.WriteLine("Starting render!");
             render = new Render(60, walkers);
-            render.Start();
+            RenderResult result = render.Start();
+            result.Export();
+            Console.WriteLine("Done!");
         }
     }
 }
