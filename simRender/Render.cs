@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace simRender
 {
     class Render
     {
-        int length;
-        Walker[] walkers;
+        public int length;
+        public Walker[] walkers;
+        private RenderResult result;
+
         public Render(int length, Walker[] walkers)
         {
             this.length = length;
@@ -18,6 +17,8 @@ namespace simRender
 
         public void Start()
         {
+            result = new RenderResult(this);
+
             for (int f = 0; f < length; f++)
             {
                 for (int i = 0; i < walkers.Length; i++)
@@ -28,6 +29,7 @@ namespace simRender
                 Console.WriteLine("Rendering {0} / {1}", f+1, length);
             }
             Console.WriteLine("Done!");
+            result.Export();
         }
     }
 }
