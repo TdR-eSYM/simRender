@@ -1,6 +1,0 @@
-﻿  SimRender.cpp
-C:\Users\Pau\source\repos\simRender\SimRender\SimRender\SimRender.cpp(8,8): error C2512: 'Walker': no hay disponible un constructor predeterminado adecuado
-C:\Users\Pau\source\repos\simRender\SimRender\SimRender\Walker.h(2,7): message : vea la declaración de 'Walker'
-C:\Users\Pau\source\repos\simRender\SimRender\SimRender\SimRender.cpp(13,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\Pau\source\repos\simRender\SimRender\SimRender\SimRender.cpp(16,51): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Pau\source\repos\simRender\SimRender\SimRender\SimRender.cpp(16,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
