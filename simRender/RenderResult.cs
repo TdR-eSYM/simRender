@@ -15,11 +15,18 @@ namespace simRender
         public RenderResult(Render render)
         {
             this.render = render;
+            data = new Walker[render.length, render.walkers.Length];
+        }
+
+        public void PushData(int frame, Walker[] frameData)
+        {
+            for(int i = 0; i < frameData.Length; i++){
+                data[frame, i] = frameData[i];
+            }
         }
 
         public void Export()
         {
-            data = new Walker[render.length, render.walkers.Length];
             string json = JsonSerializer.Serialize(data);
 
             string fileName = "export.json";

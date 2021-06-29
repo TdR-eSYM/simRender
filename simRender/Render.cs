@@ -25,7 +25,7 @@ namespace simRender
                 {
                     walkers[i].Step();
                 }
-
+                result.PushData(f, walkers);
                 Console.WriteLine("Rendering {0} / {1}", f+1, length);
             }
             Console.WriteLine("Done!");
