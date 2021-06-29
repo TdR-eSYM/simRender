@@ -27,10 +27,10 @@ namespace simRender
 
         public void Export()
         {
-            string json = RenderSerializer.Serialize(data);
+            byte[] bData = RenderSerializer.Serialize(data);
 
             string fileName = "export.sim";
-            File.WriteAllText(fileName, json);
+            File.WriteAllBytes(fileName, bData);
         }
     }
 }
