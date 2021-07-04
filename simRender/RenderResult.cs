@@ -9,20 +9,23 @@ namespace simRender
 {
     class RenderResult
     {
-        Walker[,] data;
+        float[,,] data;
         Render render;
 
         public RenderResult(Render render)
         {
             this.render = render;
-            data = new Walker[render.length, render.walkers.Length];
+            data = new float[render.length, render.walkNum, 2];
         }
 
-        public void PushData(int frame, Walker[] frameData)
+        public void PushData(int f, Walker[] inData)
         {
-            for(int i = 0; i < frameData.Length; i++){
-                data[frame, i] = frameData[i];
+            for(int i = 0; i < render.walkNum; i++)
+            {
+                data[f, i, 0] = inData[i].x;
+                data[f, i, 1] = inData[i].y;
             }
+            Console.WriteLine("Frame {0}", data[f, 0, 0]);
         }
 
         public void Export()

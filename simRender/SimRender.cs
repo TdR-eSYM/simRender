@@ -6,10 +6,7 @@ namespace simRender
 {
     class SimRender
     {
-        static Walker[] walkers = new Walker[100000];
-
         static Render render;
-
 
 
         static void Main(string[] args)
@@ -18,20 +15,17 @@ namespace simRender
             Stopwatch stopwatch = new Stopwatch();
 
             stopwatch.Start();
-
-            Console.WriteLine("Spawning agents...");
-            for(int i = 0; i < walkers.Length; i++)
-            {
-                walkers[i] = new Walker();
-            }
-
             Console.WriteLine("Starting render!");
-            render = new Render(60, walkers);
+            render = new Render(30, 1);
+
+            render.Setup();
+
             RenderResult result = render.Start();
+
             result.Export();
 
             stopwatch.Stop();
-            Console.WriteLine("Simulated {0} fotograms with {1} agents in {2} ms", render.length, walkers.Length, stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("Simulated {0} fotograms with {1} agents in {2} ms", render.length, render.walkNum, stopwatch.ElapsedMilliseconds);
         }
     }
 }
