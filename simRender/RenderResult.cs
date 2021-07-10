@@ -25,7 +25,6 @@ namespace simRender
                 data[f, i, 0] = inData[i].x;
                 data[f, i, 1] = inData[i].y;
             }
-            Console.WriteLine("Frame {0}", data[f, 0, 0]);
         }
 
         public void Export()
