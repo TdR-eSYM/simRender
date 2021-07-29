@@ -1,2 +1,2 @@
 # simRender
-A more efficient simulation renderer for the epidemicSimRender simulator.
+A more efficient simulation engine for the epidemicSimV2 simulator.
