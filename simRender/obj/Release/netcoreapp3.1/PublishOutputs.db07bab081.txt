@@ -1,0 +1,5 @@
+C:\Users\Pau\source\repos\simRender\simRender\bin\Release\netcoreapp3.1\publish\simRender.exe
+C:\Users\Pau\source\repos\simRender\simRender\bin\Release\netcoreapp3.1\publish\simRender.dll
+C:\Users\Pau\source\repos\simRender\simRender\bin\Release\netcoreapp3.1\publish\simRender.deps.json
+C:\Users\Pau\source\repos\simRender\simRender\bin\Release\netcoreapp3.1\publish\simRender.runtimeconfig.json
+C:\Users\Pau\source\repos\simRender\simRender\bin\Release\netcoreapp3.1\publish\simRender.pdb

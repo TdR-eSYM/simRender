@@ -17,8 +17,14 @@ namespace simRender
             stopwatch.Start();
 
             Console.WriteLine("Starting render!");
+            
+            if(args.Length < 2)
+            {
+                Console.WriteLine("Misssing arguments...");
+                return;
+            }
 
-            render = new Render(60*10, 10000);
+            render = new Render(60*int.Parse(args[0]), int.Parse(args[1]));
 
             render.Setup();
 
