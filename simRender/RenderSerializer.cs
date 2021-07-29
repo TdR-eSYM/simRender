@@ -19,7 +19,9 @@ namespace simRender
                     bData[iter+1] = data[f, i, 1];
                     iter += 2;
                 }
+#if DEBUG
                 Console.WriteLine("Exporting {0} / {1}", f + 1, data.GetLength(0));
+ #endif
             }
 
             var byteArray = new byte[bData.Length * sizeof(float)];

@@ -38,7 +38,9 @@ namespace simRender
                     walkers[i].Step();
                 }
                 result.PushData(f, walkers);
+#if DEBUG
                 Console.WriteLine("Rendering {0} / {1}", f, length);
+#endif
             }
 
             return result;

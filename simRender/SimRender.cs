@@ -15,7 +15,9 @@ namespace simRender
             Stopwatch stopwatch = new Stopwatch();
 
             stopwatch.Start();
+
             Console.WriteLine("Starting render!");
+
             render = new Render(60*10, 10000);
 
             render.Setup();
