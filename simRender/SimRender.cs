@@ -18,13 +18,13 @@ namespace simRender
 
             Console.WriteLine("Starting render!");
             
-            if(args.Length < 2)
+            if(args.Length < 4)
             {
                 Console.WriteLine("Misssing arguments...");
                 return;
             }
 
-            render = new Render(60*int.Parse(args[0]), int.Parse(args[1]));
+            render = new Render(int.Parse(args[0]), int.Parse(args[1]), int.Parse(args[2]), int.Parse(args[3]), float.Parse(args[4]));
 
             render.Setup();
 

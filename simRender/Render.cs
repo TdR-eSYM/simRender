@@ -9,12 +9,19 @@ namespace simRender
         public int length;
         public int walkNum;
         public Walker[] walkers;
+        private int size;
+        private int initialInf;
+        private float infChance;
         private RenderResult result;
 
-        public Render(int length, int walkNum)
+        public Render(int length, int walkNum, int size, int initialInf, float infChance)
         {
             this.length = length;
             this.walkNum = walkNum;
+            this.size = size;
+            this.initialInf = initialInf;
+            this.infChance = infChance;
+
             walkers = new Walker[walkNum];
         }
 
@@ -23,7 +30,14 @@ namespace simRender
             Console.WriteLine("Spawning agents...");
             for(int i = 0; i < walkNum; i++)
             {
-                walkers[i] = new Walker();
+                if(initialInf != 0)
+                {
+                    walkers[i] = new Walker(size, 1);
+                    initialInf--;
+                }
+                else {
+                    walkers[i] = new Walker(size, 0);
+                }
             }
         }
 
@@ -36,6 +50,7 @@ namespace simRender
                 for(int i = 0; i < walkNum; i++)
                 {
                     walkers[i].Step();
+                    walkers[i].Infect(walkNum, walkers, infChance);
                 }
                 result.PushData(f, walkers);
 #if DEBUG

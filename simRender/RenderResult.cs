@@ -15,7 +15,7 @@ namespace simRender
         public RenderResult(Render render)
         {
             this.render = render;
-            data = new float[render.length, render.walkNum, 2];
+            data = new float[render.length, render.walkNum, 3];
         }
 
         public void PushData(int f, Walker[] inData)
@@ -24,6 +24,7 @@ namespace simRender
             {
                 data[f, i, 0] = inData[i].x;
                 data[f, i, 1] = inData[i].y;
+                data[f, i, 2] = inData[i].state;
             }
         }
 

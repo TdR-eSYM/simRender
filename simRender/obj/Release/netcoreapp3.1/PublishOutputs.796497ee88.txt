@@ -1,0 +1,5 @@
+C:\Users\paulo\Desktop\epidemicSimulatorV2\epidemicSimulatorV2\data\RenderEngine\simRender.exe
+C:\Users\paulo\Desktop\epidemicSimulatorV2\epidemicSimulatorV2\data\RenderEngine\simRender.dll
+C:\Users\paulo\Desktop\epidemicSimulatorV2\epidemicSimulatorV2\data\RenderEngine\simRender.deps.json
+C:\Users\paulo\Desktop\epidemicSimulatorV2\epidemicSimulatorV2\data\RenderEngine\simRender.runtimeconfig.json
+C:\Users\paulo\Desktop\epidemicSimulatorV2\epidemicSimulatorV2\data\RenderEngine\simRender.pdb

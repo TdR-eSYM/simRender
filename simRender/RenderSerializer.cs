@@ -16,8 +16,9 @@ namespace simRender
                 for(int i = 0; i < data.GetLength(1); i++)
                 {
                     bData[iter] = data[f, i, 0];
-                    bData[iter+1] = data[f, i, 1];
-                    iter += 2;
+                    bData[iter + 1] = data[f, i, 1];
+                    bData[iter + 2] = data[f, i, 2];
+                    iter += 3;
                 }
 #if DEBUG
                 Console.WriteLine("Exporting {0} / {1}", f + 1, data.GetLength(0));

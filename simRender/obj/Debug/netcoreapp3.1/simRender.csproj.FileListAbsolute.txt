@@ -11,3 +11,16 @@ C:\Users\Pau\source\repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.
 C:\Users\Pau\source\repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.dll
 C:\Users\Pau\source\repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.pdb
 C:\Users\Pau\source\repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.genruntimeconfig.cache
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.exe
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.deps.json
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.runtimeconfig.json
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.runtimeconfig.dev.json
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.dll
+C:\Users\paulo\Source\Repos\simRender\simRender\bin\Debug\netcoreapp3.1\simRender.pdb
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.csprojAssemblyReference.cache
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.AssemblyInfoInputs.cache
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.AssemblyInfo.cs
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.dll
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.pdb
+C:\Users\paulo\Source\Repos\simRender\simRender\obj\Debug\netcoreapp3.1\simRender.genruntimeconfig.cache
